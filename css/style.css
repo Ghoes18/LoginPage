@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Titillium+Web:wght@300&display=swap");
+
+/*Padrão*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.center {
+  max-width: 1100px;
+  padding: 0 2%;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+/*Estilização para o site*/
+
+.logo h1 {
+  font-family: "Pattaya", sans-serif;
+  color: #eb8d95;
+  font-size: 42px;
+}
+
+header {
+  background-color: #ffeaba;
+  padding: 8px 0;
+}
+
+.logo {
+  float: left;
+}
+
+.form-login {
+  float: right;
+}
+
+.form-login .form-elements {
+  margin-top: 1%;
+  display: inline-block;
+}
+
+.form-login .form-elements input[type="email"],
+.form-login .form-elements input[type="password"] {
+  padding-left: 5px;
+}
+
+.form-elements input[type="submit"] {
+  cursor: pointer;
+  background-color: #eb8d95;
+  color: whitesmoke;
+  padding: 3px 8px;
+  border-radius: 8px;
+  border: 2px solid gray;
+  font-weight: bold;
+}
+
+.form-elements input[type="submit"]:hover {
+  background-color: #ce7d84;
+}
+
+main {
+  padding: 40px 0;
+  height: 100%;
+  max-height: 400px;
+}
+
+.img-pessoas {
+  float: left;
+  width: 50%;
+}
+
+.img-pessoas img {
+  max-width: 100%;
+}
+
+.create-acc {
+  width: 42%;
+  float: left;
+}
+
+.create-acc > h2 {
+  color: #eb8d95;
+  font-family: "Pattaya", sans-serif;
+  font-size: 42px;
+}
+
+.create-acc > h4 {
+  font-style: italic;
+  margin-left: 1%;
+  color: #484c57;
+}
+
+.create-acc-elements {
+  margin-top: 10px;
+}
+
+.w50 {
+  width: 50%;
+  float: left;
+  padding: 0 5px;
+}
+
+.w100 {
+  padding: 0 5px;
+  width: 100%;
+  float: left;
+}
+
+form.create-acc input {
+  width: 100%;
+  margin-top: 5px;
+}
+
+form.create-acc input[type="email"],
+form.create-acc input[type="text"],
+form.create-acc input[type="password"] {
+  height: 34px;
+  padding-left: 5px;
+}
+
+form.create-acc input[type="submit"] {
+  height: 40px;
+  background-image: linear-gradient(#af97aa, #877182);
+  color: white;
+  cursor: pointer;
+  max-width: 140px;
+  font-family: "Pattaya", sans-serif;
+  font-size: 18px;
+  margin-left: 40%;
+  margin-top: 4%;
+}
+
+form.create-acc .w100 > h4 {
+  color: #484c57;
+  font-weight: normal;
+  margin-top: 0.7%;
+}
+
+.sexo {
+  float: left;
+  width: 20%;
+}
+
+.sexo label {
+  margin-left: 3%;
+}
+
+.sexo input[type="radio"] {
+  margin-top: 15px;
+  margin-left: 2px;
+  width: auto !important;
+}
+
+section.linguas {
+    width: 100%;
+  margin-top: 16px;
+  padding: 30px 0;
+}
+
+section.linguas .center {
+  padding: 0 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #484c57;
+}
+
+section.linguas a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #9e9c9e;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  form.form-login {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .form-login .form-elements {
+    margin-top: 10px 0;
+    display: block;
+  }
+
+  .form-login .form-elements input[type="email"],
+  .form-login .form-elements input[type="password"] {
+    padding-left: 5px;
+    width: 100%;
+    max-width: 155px;
+    margin-bottom: 8px;
+  }
+
+  .form-login .form-elements input[type="submit"] {
+      width: 18%;
+  }
+
+  .create-acc {
+      width: 100%;
+  }
+
+  .img-pessoas{
+      text-align: center;
+      float: none;
+      width: 100%;
+  }
+
+  main {
+      margin-bottom: 20px;
+  }
+}
